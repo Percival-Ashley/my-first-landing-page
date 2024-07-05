@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cats</title>
+    <style>
+    body{
+      background: linear-gradient(180.5deg, rgb(0, 128, 128) 8.5%, rgb(174, 206, 100) 118.2%);
+    }
+    h1{
+      text-align: center;
+      color: white;
+    }
+    h2 {
+        text-align: center;
+        color: white;
+        border: 1px solid white;
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+    }
+    img {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border-radius: 10px;
+    }
+    em{
+      color: orangered;
+      font-weight: bold;
+    }
+    button {
+        border-radius: 25px;
+        margin: 0 auto;
+        display: block;
+        background-color: lightgreen;
+        border: 1px solid green;
+        color: green;
+        font-size: 16px;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        line-height: 22px;
+        padding: 16px 24px;
+        text-decoration: none;
+        transition: all 200ms ease;
+      }
+      button:hover {
+        color: #fff;
+        background: green;
+      }
+    .box{
+      font-family: Arial, Helvetica, sans-serif;
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 15px 60px;
+      color: white;
+      font-size: large;
+    }
+    .fact{
+      font-style: italic;
+    }
+    .author{
+      font-family: monospace;
+      color: whitesmoke;
+      text-align: center;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+    <h1>Be PAWsitive</h1>
+    <h2>Waiting for that one special meowment.</h2>
+    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/127/837/original/Cats_2.jpg?1717071702" alt="Cute Cat" width="500"/>
+    <p>
+      Early morning wake-up meows from a <strong>cat</strong> can be a delightful way to start the day. Though it might be early, there's something special about being greeted by your feline friend's enthusiastic meows. Their morning vocalizations, whether for breakfast or attention, can bring a smile to your face and set a positive tone for the day.
+      <br/>
+      <br/>
+      Our fur babies love rom-coms, or at least it seems that way when they curl up with you during a movie night. They might not follow the plot, but they enjoy the cozy atmosphere and presence of their favorite human. Their presence can make a romantic comedy even more enjoyable, adding to the sense of comfort and relaxation.
+      <br/>
+      <br/>
+      Cats come in a delightful variety of shapes and sizes, each with its own unique charm. From the sleek Siamese to the fluffy Maine Coon, the diversity in their appearances ensures there is a perfect cat for every personality and preference, adding to the fascination and joy of having a feline companion <strong>fur-ever</strong>
+      <br/>
+      <br/>
+      They are made for spooning, with their soft fur and warm bodies making them <strong>pur-fect</strong> cuddle companions. Many cats enjoy curling up next to their owners, fitting perfectly into the crook of an arm or snuggling against your side. This close contact provides warmth and comfort, strengthening the bond between cat and owner.
+      <br/>
+      <br/>
+
+      <a href="https://en.wikipedia.org/wiki/Cat" target="_blank">Learn more about Cats 🐈</a>
+      <br/>
+      <hr/>
+      <span class="fact"><em>Fun fact: </em>For twenty years, Talkeetna, an Alaskan tiny town, was led by an orange tabby cat named Stubbs as mayor🐱! Despite not having any legislative authority, he won several elections without opposition and was well-liked by residents as well as tourists.</span>
+    </p>
+    <button>Adopt Me</button>
+    <br/>
+    <br/>
+    <div class="author">This page was built by Percival Ashley</div>
+    </div>
+
+    <script>
+      function adoptMe() {
+        let name = prompt("What is your name?");
+        let email = prompt("Paw-lease🐾, enter your email")
+        let purrent = prompt("Hello "+ name+ "! Would you like to become a Pur-rent to an adorable cat?"
+        );
+        purrent = purrent.trim().toLowerCase();
+
+        if (purrent === "yes") {
+          alert(
+            "Thank you " + name + ", we'll be in touch through your email 😊"
+          );
+        } else {
+          alert("Thank you for your time " +
+              name + "👫"
+          );
+        }
+      }
+      let clickButton = document.querySelector("button");
+      clickButton.addEventListener("click", adoptMe);
+    </script>
+  </body>
+</html>
